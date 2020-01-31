@@ -20,4 +20,4 @@ userRouter.delete( '/:userId',
   deleteUserByPk
 );
 
-export default userRouter;
+export default userRouter

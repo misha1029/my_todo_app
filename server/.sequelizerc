@@ -1,11 +1,11 @@
 require('@babel/register');
+const path = require( 'path' );
 
-const path = require ('path');
+const commonPath = path.resolve( 'src', 'db' );
 
-const commonPath = path.resolve('src','db');
-module.exports =  {
-  'config': path.resolve( commonPath, 'config', 'config.js'),
-  'models-path': path.resolve( 'src', 'models'),
-  'seeders-path': path.resolve(commonPath, 'seeders'),
-  'migrations-path': path.resolve(commonPath, 'migrations')
+module.exports = {
+  'config': path.resolve( commonPath, 'config', 'config.js' ),
+  'models-path': path.resolve( 'src', 'models' ),
+  'seeders-path': path.resolve( commonPath, 'seeders' ),
+  'migrations-path': path.resolve( commonPath, 'migrations' )
 };

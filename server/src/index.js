@@ -34,6 +34,7 @@ app.use( errorHandlers.applicationErrorHandler );
 app.use( errorHandlers.sequelizeErrorHandler );
 app.use( errorHandlers.validationErrorHandler );
 app.use( (err, req, res, next) => {
+  console.log( res );
   return res.status( 500 ).send( 'Internal server error' );
 } );
 

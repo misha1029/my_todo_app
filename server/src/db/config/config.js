@@ -1,6 +1,6 @@
-require ('dotenv/config');
+require( 'dotenv/config' );
 
-module.exports = {
+const config = {
   development: {
     username: process.env.DB_USER,
     password: process.env.DB_USER_PASSWORD,
@@ -8,15 +8,13 @@ module.exports = {
     host: 'localhost',
     port: 5432,
     dialect: 'postgres',
-    migrationStorage: "json",
-    seederStorage: "json",
+    migrationStorage: 'json',
+    seederStorage: 'json',
   },
-  test: {
-
-  },
-  production: {
-
-  }
+  test: {},
+  production: {},
 };
 
 module.exports = config;
+
+

@@ -1,6 +1,5 @@
 import { User }  from '../models';
 import AppErrors from '../utils/application_errors';
-import NotFoundError from '../utils/application_errors/NotFoundError';
 
 export async function createUser (req, res, next) {
   try {
@@ -70,5 +69,4 @@ export async function deleteUserByPk (req, res, next) {
     next( e );
   }
 }
-
 
